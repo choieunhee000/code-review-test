@@ -74,10 +74,16 @@
 
   body {
     @apply bg-cyber-bg text-cyber-text font-mono;
+    /* NEO-SEOUL scene + readability overlay + cyber grid */
     background-image:
+      linear-gradient(rgba(5, 8, 22, 0.78), rgba(5, 8, 22, 0.88)),
+      url("/backgroundimg.png"),
       linear-gradient(rgba(0,229,255,.03) 1px, transparent 1px),
       linear-gradient(90deg, rgba(0,229,255,.03) 1px, transparent 1px);
-    background-size: 40px 40px;
+    background-size: auto, cover, 40px 40px, 40px 40px;
+    background-position: center, center, 0 0, 0 0;
+    background-repeat: no-repeat, no-repeat, repeat, repeat;
+    background-attachment: scroll, scroll, scroll, scroll;
     overflow-x: hidden;
   }
 
